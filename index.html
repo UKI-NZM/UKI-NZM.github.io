@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>うかいの実験室</title>
+<meta name="description" content="QAエンジニア「うかい」の実験室。AIと一緒に手を動かして作ったゲームやツールを置いています。">
+<style>
+  :root{
+    --bg1:#1e1846; --bg2:#332965; --bg3:#4a3a7d;
+    --panel:rgba(255,255,255,.06); --panel-border:rgba(255,255,255,.1);
+    --text:#f2f0ff; --sub:#b8b0d9; --accent:#ffd76a;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; font-family:"Hiragino Sans","Yu Gothic",sans-serif;
+    color:var(--text);
+    background: linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+    min-height:100vh;
+  }
+  .wrap{ max-width:640px; margin:0 auto; padding:56px 20px 80px; }
+  header{ text-align:center; margin-bottom:40px; }
+  .name{ font-size:32px; font-weight:800; letter-spacing:.04em; margin:0; }
+  .tagline{ color:var(--sub); font-size:14px; margin:10px 0 0; letter-spacing:.03em; }
+  .bio{
+    background:var(--panel); border:1px solid var(--panel-border); border-radius:16px;
+    padding:20px 22px; margin-bottom:36px; font-size:14px; line-height:1.9;
+  }
+  .bio a{ color:var(--accent); }
+  h2{ font-size:14px; color:var(--sub); letter-spacing:.08em; margin:0 0 14px; }
+  .card{
+    display:block; background:var(--panel); border:1px solid var(--panel-border); border-radius:16px;
+    padding:18px 20px; margin-bottom:14px; text-decoration:none; color:var(--text);
+    transition: transform 150ms ease, border-color 150ms ease;
+  }
+  .card:hover{ transform: translateY(-2px); border-color: rgba(255,255,255,.28); }
+  .cardTop{ display:flex; align-items:center; gap:12px; }
+  .cardEmoji{ font-size:28px; flex:0 0 auto; }
+  .cardTitle{ font-size:16px; font-weight:700; }
+  .cardDesc{ font-size:13px; color:var(--sub); margin-top:8px; line-height:1.7; }
+  .cardArrow{ margin-left:auto; color:var(--sub); font-size:18px; }
+  section{ margin-bottom:36px; }
+  footer{ text-align:center; color:var(--sub); font-size:12px; margin-top:56px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="name">うかいの実験室</p>
+      <p class="tagline">小さく試して、面白ければ公開する場所。</p>
+    </header>
+
+    <div class="bio">
+      普段はQAエンジニアとして、ソフトウェアの「壊れ方」を見る仕事をしています。<br>
+      note（<a href="https://note.com/nocode_qa_ai" target="_blank" rel="noopener">壊れ方を見る人</a>）では、QA目線でAI活用について書いています。<br>
+      ここでは、実際にAI（Claude）と一緒に手を動かして作ったものを置いています。よかったら覗いてみてください。
+    </div>
+
+    <section>
+      <h2>見て回る</h2>
+
+      <a class="card" href="games.html">
+        <div class="cardTop">
+          <div class="cardEmoji">🎮</div>
+          <div class="cardTitle">作ったゲーム</div>
+          <div class="cardArrow">→</div>
+        </div>
+        <div class="cardDesc">遊んでもらうために作ったブラウザゲームたち。</div>
+      </a>
+
+      <a class="card" href="tools.html">
+        <div class="cardTop">
+          <div class="cardEmoji">🛠️</div>
+          <div class="cardTitle">作ったツール</div>
+          <div class="cardArrow">→</div>
+        </div>
+        <div class="cardDesc">ちょっとした作業を楽にするために作ったもの。</div>
+      </a>
+
+      <a class="card" href="https://note.com/nocode_qa_ai" target="_blank" rel="noopener">
+        <div class="cardTop">
+          <div class="cardEmoji">✍️</div>
+          <div class="cardTitle">note：うかい｜壊れ方を見る人</div>
+          <div class="cardArrow">↗</div>
+        </div>
+        <div class="cardDesc">QA×AIについての記事を書いています。</div>
+      </a>
+    </section>
+
+    <footer>
+      &copy; うかい
+    </footer>
+  </div>
+</body>
+</html>

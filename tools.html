@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>作ったツール | うかいの実験室</title>
+<meta name="description" content="うかいがAIと一緒に作った、ちょっとした作業を楽にするツールの一覧。">
+<style>
+  :root{
+    --bg1:#1e1846; --bg2:#332965; --bg3:#4a3a7d;
+    --panel:rgba(255,255,255,.06); --panel-border:rgba(255,255,255,.1);
+    --text:#f2f0ff; --sub:#b8b0d9; --accent:#ffd76a;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; font-family:"Hiragino Sans","Yu Gothic",sans-serif;
+    color:var(--text);
+    background: linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 55%,var(--bg3) 100%);
+    min-height:100vh;
+  }
+  .wrap{ max-width:640px; margin:0 auto; padding:56px 20px 80px; }
+  .back{ display:inline-block; color:var(--sub); text-decoration:none; font-size:13px; margin-bottom:24px; }
+  .back:hover{ color:var(--text); }
+  h1{ font-size:24px; font-weight:800; margin:0 0 28px; }
+  .card{
+    display:block; background:var(--panel); border:1px solid var(--panel-border); border-radius:16px;
+    padding:18px 20px; margin-bottom:14px; text-decoration:none; color:var(--text);
+    transition: transform 150ms ease, border-color 150ms ease;
+  }
+  .card:hover{ transform: translateY(-2px); border-color: rgba(255,255,255,.28); }
+  .cardTop{ display:flex; align-items:center; gap:12px; }
+  .cardEmoji{ font-size:28px; flex:0 0 auto; }
+  .cardTitle{ font-size:16px; font-weight:700; }
+  .cardDesc{ font-size:13px; color:var(--sub); margin-top:8px; line-height:1.7; }
+  .emptyCard{
+    background:var(--panel); border:1px dashed var(--panel-border); border-radius:16px;
+    padding:24px 20px; text-align:center; color:var(--sub); font-size:13px; line-height:1.8;
+  }
+  footer{ text-align:center; color:var(--sub); font-size:12px; margin-top:56px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← うかいの実験室</a>
+    <h1>🛠️ 作ったツール</h1>
+
+    <div class="emptyCard">
+      🧪 只今実験中です。<br>
+      できあがったらここに並びます。お楽しみに。
+    </div>
+
+    <footer>
+      &copy; うかい
+    </footer>
+  </div>
+</body>
+</html>
